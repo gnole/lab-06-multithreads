@@ -1,4 +1,3 @@
-// Created by perfest on 12/26/20.
 #ifndef HASH_ANALYZER_PRJ_HASH_DATA_H
 #define HASH_ANALYZER_PRJ_HASH_DATA_H
 
