@@ -7,3 +7,6 @@
 [submodule "third-party/PicoSHA2"]
 	path = third-party/PicoSHA2
 	url = https://github.com/okdshin/PicoSHA2
+[submodule "third_party/gtest"]
+	path = third_party/gtest
+	url = https://github.com/google/googletest
