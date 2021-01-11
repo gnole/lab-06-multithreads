@@ -17,7 +17,7 @@ void to_json(json& json_, const Data& jData) {
            {"data", jData.argument}};
 }
 
-[[noreturn]] void HashResearcher::one_process() {
+ void HashResearcher::one_process() {
   while (true) {
     const std::string random_data = std::to_string(rand());
     const std::string hash =
