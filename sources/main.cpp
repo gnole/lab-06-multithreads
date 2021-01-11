@@ -1,4 +1,3 @@
-// Created by perfest on 12/23/20.
 #include <iostream>
 #include <thread>
 #include <cstring>
