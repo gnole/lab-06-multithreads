@@ -1,7 +1,7 @@
 #include <hash-analyzer.hpp>
 #include <vector>
 #include <thread>
-#include <../third-party/PicoSHA2/picosha2.h>
+#include <picosha2.h>
 #include <mutex>
 #include <iostream>
 #include <boost/log/trivial.hpp>
