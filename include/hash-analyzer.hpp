@@ -12,7 +12,7 @@ class HashResearcher {
   unsigned int numberOfThreads;
   nlohmann::json jsonData;
   std::mutex sync;
-  void one_process();
+  [[noreturn]] void one_process();
   boost::regex hash_format;
  public:
   void start_research();
