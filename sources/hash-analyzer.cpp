@@ -1,4 +1,3 @@
-// Copyright 2020 typeperfest perfect2111@gmail.com
 #include <hash-analyzer.hpp>
 #include <vector>
 #include <thread>
