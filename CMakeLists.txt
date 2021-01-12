@@ -24,9 +24,9 @@ string(APPEND CMAKE_CXX_FLAGS " -Wno-unused-command-line-argument")
 string(APPEND CMAKE_CXX_FLAGS " -Wshadow -Wnon-virtual-dtor")
 
 add_subdirectory(third-party/)
-
-hunter_add_package(GTest)
-find_package(GTest CONFIG REQUIRED)
+add_subdirectory(third_party/gtest)
+#hunter_add_package(GTest)
+#find_package(GTest CONFIG REQUIRED)
 
 hunter_add_package(nlohmann_json)
 find_package(nlohmann_json CONFIG REQUIRED)
@@ -52,14 +52,14 @@ target_include_directories(main
 target_link_libraries(main hash-analyzer-lib Boost::regex Boost::program_options)
 
 add_executable(tests
-  ${CMAKE_CURRENT_SOURCE_DIR}/tests/test.cpp
-        sources/main.cpp)
+  ${CMAKE_CURRENT_SOURCE_DIR}/tests/test.cpp)
+        #sources/main.cpp)
 
 target_include_directories(tests
   PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include
 )
 
-target_link_libraries(tests GTest::gtest_main)
+target_link_libraries(tests gtest_main)
 
 enable_testing()
 add_test(NAME unit_tests COMMAND tests)
