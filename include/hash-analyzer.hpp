@@ -1,3 +1,4 @@
+
 #ifndef INCLUDE_HEADER_HPP_
 #define INCLUDE_HEADER_HPP_
 
@@ -12,7 +13,7 @@ class HashResearcher {
   unsigned int numberOfThreads;
   nlohmann::json jsonData;
   std::mutex sync;
-  [[noreturn]] void one_process();
+  void one_process();
   boost::regex hash_format;
  public:
   void start_research();
