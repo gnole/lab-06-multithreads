@@ -14,8 +14,8 @@ set(
 include("tools/gate/cmake/HunterGate.cmake")
 
 HunterGate(
-        URL "https://github.com/cpp-pm/hunter/archive/v0.23.288.tar.gz"
-        SHA1 "6c9b2bc606d86ae31f96a62fc68f0a593024815b"
+        URL "https://github.com/cpp-pm/hunter/archive/v0.23.289.tar.gz"
+        SHA1 "7d7323704780200a1575fc089d26f8a8a393a1fa"
 )
 
 
