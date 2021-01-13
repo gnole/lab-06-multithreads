@@ -14,8 +14,8 @@ set(
 include("tools/gate/cmake/HunterGate.cmake")
 
 HunterGate(
-        URL "https://github.com/cpp-pm/hunter/archive/v0.23.218.tar.gz"
-        SHA1 "9a3594a61227967fb92159339ba326701b287b19"
+        URL "https://github.com/cpp-pm/hunter/archive/v0.23.288.tar.gz"
+        SHA1 "6c9b2bc606d86ae31f96a62fc68f0a593024815b"
 )
 
 
@@ -53,8 +53,8 @@ target_include_directories(main
 target_link_libraries(main hash-analyzer-lib Boost::regex Boost::program_options)
 
 add_executable(tests
-  ${CMAKE_CURRENT_SOURCE_DIR}/tests/test.cpp)
-        #sources/main.cpp)
+  ${CMAKE_CURRENT_SOURCE_DIR}/tests/test.cpp
+        sources/main.cpp)
 
 target_include_directories(tests
   PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include
