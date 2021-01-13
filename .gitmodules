@@ -10,3 +10,6 @@
 [submodule "third_party/gtest"]
 	path = third_party/gtest
 	url = https://github.com/google/googletest
+[submodule "tools/gate"]
+	path = tools/gate
+	url = https://github.com/hunter-packages/gate.git
